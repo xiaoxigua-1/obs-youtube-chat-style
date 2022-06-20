@@ -1,0 +1,40 @@
+#contents > yt-live-chat-renderer {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#chat-messages > yt-live-chat-header-renderer {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#live-chat-message-input {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#ticker {
+  height: 0;
+  overflow: hidden;
+}
+
+#item-scroller {
+  overflow-y: hidden !important;
+}
+
+.yt-live-chat-item-list-renderer {
+  margin: 10px 0;
+  padding: 4px 0px;
+}
+
+#author-photo {
+  width: 0;
+  overflow: hidden;
+}
+
+.yt-live-chat-viewer-engagement-message-renderer {
+  width: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+}
