@@ -24,13 +24,7 @@
 }
 
 .yt-live-chat-item-list-renderer {
-  margin: 10px 0;
-  padding: 4px 0px;
-}
-
-#author-photo {
-  width: 0;
-  overflow: hidden;
+  padding: 8px 10px;
 }
 
 .yt-live-chat-viewer-engagement-message-renderer {
@@ -43,6 +37,18 @@
   bottom: auto !important;
 }
 
-yt-live-chat-text-message-renderer[author-is-owner] {
+yt-live-chat-text-message-renderer {
   background-color: rgba(0, 0, 0, 0) !important;
+}
+
+yt-live-chat-text-message-renderer > #content > yt-live-chat-author-chip {
+  width: 0;
+  overflow: hidden;
+}
+
+yt-live-chat-text-message-renderer > #content > #message {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 10px;
+  width: auto;
+  padding: 5px 10px;
 }
