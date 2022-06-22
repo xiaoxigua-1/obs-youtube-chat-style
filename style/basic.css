@@ -1,30 +1,32 @@
-#contents > yt-live-chat-renderer {
-  background-color: rgba(0, 0, 0, 0);
+/* Background colors*/
+body {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+  border-radius: 20px;
 }
 
-#chat-messages > yt-live-chat-header-renderer {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
+/* Transparent background. */
+yt-live-chat-renderer {
+  background-color: transparent !important;
 }
 
-#live-chat-message-input {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
+yt-live-chat-text-message-renderer,
+yt-live-chat-text-message-renderer[is-highlighted] {
+  background-color: transparent !important;
+}
+
+/* Hidden */
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer {
+  display: none !important;
 }
 
 #ticker {
-  height: 0;
-  overflow: hidden;
+  display: none !important;
 }
 
 #item-scroller {
   overflow-y: hidden !important;
-}
-
-.yt-live-chat-item-list-renderer {
-  padding: 8px 10px;
 }
 
 .yt-live-chat-viewer-engagement-message-renderer {
@@ -33,22 +35,36 @@
   padding: 0 !important;
 }
 
+#item-offset {
+  height: 100% !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
 #items {
   bottom: auto !important;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 yt-live-chat-text-message-renderer {
+  padding: 8px 20px;
+}
+
+yt-live-chat-text-message-renderer > yt-img-shadow {
   background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 yt-live-chat-text-message-renderer > #content > yt-live-chat-author-chip {
-  width: 0;
-  overflow: hidden;
+  display: none;
 }
 
 yt-live-chat-text-message-renderer > #content > #message {
   background-color: rgba(255, 255, 255, 0.4) !important;
-  border-radius: 10px;
+  border-radius: 8px;
   width: auto;
   padding: 5px 10px;
+  font-size: 16px;
 }
